@@ -1,0 +1,143 @@
+# mtd file created by rachi Hadj Abderrahmane
+# elrachyd@gmail.com
+# date: 1/26/2021
+#-------------------Maya Shaders-------------------------------------------------
+#--------------------------------------------------------------------------------
+
+[node ldkSimplexNoise]
+	gaffer.nodeMenu.category STRING "Texture/Maya"
+	gaffer.graphEditorLayout.defaultVisibility BOOL false	
+	gaffer.layout.section.SimplexNoise.collapsed BOOL false	
+
+	[attr scale]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "SimplexNoise"
+		gaffer.layout.index INT 0	
+	[attr amplitude]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "SimplexNoise"
+		gaffer.layout.index INT 1		
+	[attr threshold]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "SimplexNoise"
+		gaffer.layout.index INT 2		
+	[attr ratio]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "SimplexNoise"
+		gaffer.layout.index INT 3		
+	[attr octaves]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "SimplexNoise"
+		gaffer.layout.index INT 4		
+	[attr frequency]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "SimplexNoise"
+		gaffer.layout.index INT 5		
+	[attr frequencyRatio]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "SimplexNoise"	
+		label STRING "Frequency Ratio"		
+		gaffer.layout.index INT 6
+	[attr distortionU]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "SimplexNoise"
+		label STRING "Distortion U"			
+		gaffer.layout.index INT 7		
+	[attr distortionV]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "SimplexNoise"
+		label STRING "Distortion V"			
+		gaffer.layout.index INT 8		
+	[attr distortionRatio]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "SimplexNoise"
+		label STRING "Distortion Ratio"			
+		gaffer.layout.index INT 9		
+	[attr gamma]		
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "SimplexNoise"
+		gaffer.layout.index INT 10		
+	[attr noiseType]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "SimplexNoise"
+		label STRING "Noise Type"			
+		gaffer.layout.index INT 11
+	[attr uvCoord]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Uv Coord"	
+		label STRING "Uv Coord"
+		gaffer.layout.index INT 12
+	[attr uvFilterSize]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Uv Coord"	
+		label STRING "Uv Filter Size"		
+		gaffer.layout.index INT 13
+#--------------------------------------------------------------------------------	
+#------------- Deprecated Shaders -----------------------------------------------
+#--------------------------------------------------------------------------------
+
+[node ldkFloatConstant]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""
+	
+[node ldkFloatComposite]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING "" 
+	
+[node ldkFloatCondition]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""
+	
+[node ldkFloatCorrect]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""
+	
+[node ldkFloatLogic]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""
+	
+[node ldkFloatMask]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""
+	
+[node ldkFloatMath]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""
+	
+[node ldkColorComposite]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""
+	
+[node ldkColorCondition]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING "" 
+	
+[node ldkColorConstant]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING "" 
+
+[node ldkColorCorrect]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""
+	
+[node ldkColorLogic]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""
+	
+[node ldkColorMask]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""
+	
+[node ldkColorMath]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""
+	
+[node ldkChannels]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""
+	
+[node ldkPremultiply]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""
+	
+ 

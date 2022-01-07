@@ -1,0 +1,2115 @@
+# mtd file created by rachi Hadj Abderrahmane
+# elrachyd@gmail.com
+# date: 1/26/2021
+#-------------------Maya Shaders-------------------------------------------------
+#--------------------------------------------------------------------------------
+[node MayaBulge]
+	gaffer.nodeMenu.category STRING "Texture/Maya"
+	gaffer.graphEditorLayout.defaultVisibility BOOL false		
+	gaffer.layout.section.BludgeAttributes.collapsed BOOL false	
+
+	[attr uWidth]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "BludgeAttributes"
+		label STRING "U Width"	
+		gaffer.layout.index INT 0		
+
+	[attr vWidth]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "BludgeAttributes"
+		label STRING "V Width"			
+		gaffer.layout.index INT 1
+
+	[attr defaultColor]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"	
+		label STRING "Default Color"	
+		gaffer.layout.index INT 2
+	[attr colorGain]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Color Gain"
+		gaffer.layout.index INT 3
+
+	[attr colorOffset]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Color Offset"
+		gaffer.layout.index INT 4		
+
+	[attr alphaGain]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha Gain"			
+		gaffer.layout.index INT 5
+
+	[attr alphaOffset]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha Offset"		
+		gaffer.layout.index INT 6
+
+	[attr alphaIsLuminance]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha is Luminance"	
+		gaffer.layout.index INT 7
+
+	[attr invert]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		gaffer.layout.index INT 8
+
+	[attr uvCoord]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Uv Coord"	
+		label STRING "Uv Coord"
+		gaffer.layout.index INT 10		
+#--------------------------------------------------------------------------------
+[node MayaBrownian] 
+	gaffer.nodeMenu.category STRING "Texture/Maya"
+	gaffer.graphEditorLayout.defaultVisibility BOOL false	
+	gaffer.layout.section.BrowniaAttributes.collapsed BOOL false	
+
+	[attr lacunarity]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "BrowniaAttributes"
+		label STRING "Lacunarity"			
+		gaffer.layout.index INT 0
+	[attr increment]
+		page STRING "BrowniaAttributes"
+		gaffer.layout.index INT 1		
+	[attr octaves]
+		page STRING "BrowniaAttributes"
+		gaffer.layout.index INT 2
+	[attr weight3d]
+		page STRING "BrowniaAttributes"		
+		gaffer.layout.index INT 3
+
+	[attr defaultColor]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"	
+		label STRING "Default Color"
+		gaffer.layout.index INT 4		
+	[attr colorGain]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Color Gain"
+		gaffer.layout.index INT 5		
+	[attr colorOffset]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Color Offset"
+		gaffer.layout.index INT 6		
+	[attr alphaGain]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha Gain"	
+		gaffer.layout.index INT 7		
+	[attr alphaOffset]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha Offset"	
+		gaffer.layout.index INT 8		
+	[attr alphaIsLuminance]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha is Luminance"	
+		gaffer.layout.index INT 9			
+
+	[attr invert]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"	
+		gaffer.layout.index INT 10		
+	[attr wrap]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		gaffer.layout.index INT 11		
+	[attr local]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"	
+		gaffer.layout.index INT 12		
+	[attr placementMatrix]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		gaffer.layout.index INT 13			
+#--------------------------------------------------------------------------------
+[node MayaCloth]
+	gaffer.nodeMenu.category STRING "Texture/Maya"
+	gaffer.graphEditorLayout.defaultVisibility BOOL false	
+
+	gaffer.layout.section.ClothAttributes.collapsed BOOL false	
+	
+	[attr gapColor]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "ClothAttributes"
+		label STRING "Gap Color"
+		gaffer.layout.index INT 0		
+	[attr uColor]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "ClothAttributes"	
+		label STRING "U Color"	
+		gaffer.layout.index INT 1		
+	[attr vColor]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "ClothAttributes"
+		label STRING "V Color"	
+		gaffer.layout.index INT 2		
+	[attr uWidth]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "ClothAttributes"	
+		label STRING "U Width"	
+		gaffer.layout.index INT 3		
+	[attr vWidth]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "ClothAttributes"	
+		label STRING "V Width"	
+		gaffer.layout.index INT 4		
+	[attr uWave]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "ClothAttributes"	
+		label STRING "U Wave"	
+		gaffer.layout.index INT 5		
+	[attr vWave]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "ClothAttributes"
+		label STRING "V Wave"	
+		gaffer.layout.index INT 6		
+	[attr randomness]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "ClothAttributes"	
+		gaffer.layout.index INT 7		
+	[attr widthSpread]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "ClothAttributes"	
+		label STRING "Width Spread"	
+		gaffer.layout.index INT 8		
+	[attr brightSpread]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "ClothAttributes"	
+		label STRING "Bright Spread"
+		gaffer.layout.index INT 9		
+		
+	[attr defaultColor]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Default Color"	
+		gaffer.layout.index INT 10		
+	[attr colorGain]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Color Gain"	
+		gaffer.layout.index INT 11		
+	[attr colorOffset]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Color Offset"	
+		gaffer.layout.index INT 12		
+	[attr alphaGain]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha Gain"	
+		gaffer.layout.index INT 13		
+	[attr alphaOffset]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha Offset"	
+		gaffer.layout.index INT 14		
+	[attr alphaIsLuminance]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha is Luminance"	
+		gaffer.layout.index INT 15		
+		
+	[attr invert]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"	
+		label STRING "Invert"	
+		gaffer.layout.index INT 16		
+	[attr uvCoord]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Uv Coord"	
+		label STRING "Uv Coord"
+		gaffer.layout.index INT 17		
+		
+#--------------------------------------------------------------------------------
+[node MayaCloud]
+	gaffer.nodeMenu.category STRING "Texture/Maya"
+	gaffer.graphEditorLayout.defaultVisibility BOOL false	
+
+	gaffer.layout.section.CloudAttributes.collapsed BOOL false	
+
+	[attr color1]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "CloudAttributes"
+		label STRING "Color 1"	
+		gaffer.layout.index INT 0		
+	[attr color2]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "CloudAttributes"
+		label STRING "Color 2"		
+		gaffer.layout.index INT 1		
+	[attr contrast]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "CloudAttributes"
+		label STRING "Contrast"		
+		gaffer.layout.index INT 2		
+	[attr amplitude]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "CloudAttributes"
+		label STRING "Amplitude"	
+		gaffer.layout.index INT 3		
+	[attr depth]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "CloudAttributes"
+		label STRING "Depth"	
+		gaffer.layout.index INT 4		
+	[attr ripples]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "CloudAttributes"	
+		label STRING "Ripples"	
+		gaffer.layout.index INT 5		
+	[attr softEdges]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "CloudAttributes"
+		label STRING "Soft Edges"	
+		gaffer.layout.index INT 6		
+	[attr edgeThresh]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "CloudAttributes"
+		label STRING "Edge Thresh"	
+		gaffer.layout.index INT 7		
+	[attr centerThresh]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "CloudAttributes"
+		label STRING "Center Thresh"
+		gaffer.layout.index INT 8		
+	[attr transpRange]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "CloudAttributes"
+		label STRING "Transp Range"	
+		gaffer.layout.index INT 9		
+	[attr ratio]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "CloudAttributes"
+		label STRING "Ratio"	
+		gaffer.layout.index INT 10		
+
+	[attr defaultColor]		
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Default Color"		
+		gaffer.layout.index INT 11		
+	[attr colorGain]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Color Gain"		
+		gaffer.layout.index INT 12		
+	[attr colorOffset]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"	
+		label STRING "Color Offset"		
+		gaffer.layout.index INT 13		
+	[attr alphaGain]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha Gain"	
+		gaffer.layout.index INT 14		
+	[attr alphaOffset]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha Offset"	
+		gaffer.layout.index INT 15		
+	[attr alphaIsLuminance]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha is Luminance"
+		gaffer.layout.index INT 16		
+
+	[attr invert]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		label STRING "Invert"	
+		gaffer.layout.index INT 17		
+	[attr wrap]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"	
+		label STRING "Wrap"		
+		gaffer.layout.index INT 18		
+	[attr local]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		label STRING "Local"
+		gaffer.layout.index INT 19
+	[attr placementMatrix]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		gaffer.layout.index INT 20				
+#--------------------------------------------------------------------------------
+[node MayaCloudAlpha]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""	
+
+			
+#--------------------------------------------------------------------------------
+[node MayaCrater]
+	gaffer.nodeMenu.category STRING "Texture/Maya"
+	gaffer.graphEditorLayout.defaultVisibility BOOL false	
+
+	gaffer.layout.section.CraterAttributes.collapsed BOOL false	
+
+	[attr shaker]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "CraterAttributes"
+		gaffer.layout.index INT 0		
+	[attr channel1]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "CraterAttributes"	
+		gaffer.layout.index INT 1		
+	[attr channel2]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "CraterAttributes"
+		gaffer.layout.index INT 2		
+	[attr channel3]		
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "CraterAttributes"
+		gaffer.layout.index INT 3		
+	[attr melt]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "CraterAttributes"	
+		gaffer.layout.index INT 4		
+	[attr balance]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "CraterAttributes"	
+		gaffer.layout.index INT 5		
+	[attr frequency]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "CraterAttributes"	
+		gaffer.layout.index INT 6		
+
+	[attr normDepth]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Normal Options"
+		gaffer.layout.index INT 7		
+	[attr normMelt]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Normal Options"
+		gaffer.layout.index INT 8		
+	[attr normBalance]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Normal Options"
+		gaffer.layout.index INT 9		
+	[attr normFrequency]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Normal Options"
+		gaffer.layout.index INT 10
+
+	[attr defaultColor]		
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Default Color"	
+		gaffer.layout.index INT 11		
+	[attr colorGain]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Color Gain"		
+		gaffer.layout.index INT 12		
+	[attr colorOffset]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"	
+		label STRING "Color Offset"	
+		gaffer.layout.index INT 13		
+	[attr alphaGain]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha Gain"	
+		gaffer.layout.index INT 14		
+	[attr alphaOffset]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha Offset"	
+		gaffer.layout.index INT 15		
+	[attr alphaIsLuminance]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha is Luminance"
+		gaffer.layout.index INT 16
+	[attr invert]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		label STRING "Invert"	
+		gaffer.layout.index INT 17		
+	[attr wrap]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"	
+		label STRING "Wrap"		
+		gaffer.layout.index INT 18		
+	[attr local]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		label STRING "Local"
+		gaffer.layout.index INT 19
+	[attr placementMatrix]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		gaffer.layout.index INT 20			
+#--------------------------------------------------------------------------------
+[node MayaEnvSphere]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""	
+	
+#--------------------------------------------------------------------------------
+[node MayaFluid]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""	
+
+#--------------------------------------------------------------------------------
+[node MayaFluidData]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""	
+
+#--------------------------------------------------------------------------------
+[node MayaFluidTexture2D]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""	
+
+#--------------------------------------------------------------------------------
+[node MayaFractal]
+	gaffer.nodeMenu.category STRING "Texture/Maya"
+	gaffer.graphEditorLayout.defaultVisibility BOOL false	
+
+	gaffer.layout.section.FractalAttributes.collapsed BOOL false	
+
+	[attr amplitude]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "FractalAttributes"	
+		gaffer.layout.index INT 0		
+	[attr threshold]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "FractalAttributes"	
+		gaffer.layout.index INT 1		
+	[attr ratio]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "FractalAttributes"
+		gaffer.layout.index INT 2		
+	[attr frequencyRatio]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "FractalAttributes"
+		label STRING "Rrequency Ratio"		
+		gaffer.layout.index INT 3		
+	[attr levelMin]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "FractalAttributes"
+		label STRING "Level Min"		
+		gaffer.layout.index INT 4		
+	[attr levelMax]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "FractalAttributes"	
+		label STRING "Level Max"			
+		gaffer.layout.index INT 5		
+	[attr bias]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "FractalAttributes"	
+		gaffer.layout.index INT 6		
+	[attr inflection]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "FractalAttributes"	
+		gaffer.layout.index INT 7		
+	[attr animated]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "FractalAttributes"
+		gaffer.layout.index INT 8		
+	[attr time]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "FractalAttributes"
+		gaffer.layout.index INT 9		
+	[attr timeRatio]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "FractalAttributes"
+		label STRING "Time Ratio"		
+		gaffer.layout.index INT 10		
+
+	[attr defaultColor]		
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Default Color"
+		gaffer.layout.index INT 11		
+	[attr colorGain]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Color Gain"	
+		gaffer.layout.index INT 12		
+	[attr colorOffset]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"	
+		label STRING "Color Offset"	
+		gaffer.layout.index INT 13		
+	[attr alphaGain]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha Gain"
+		gaffer.layout.index INT 14		
+	[attr alphaOffset]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha Offset"	
+		gaffer.layout.index INT 15		
+	[attr alphaIsLuminance]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha is Luminance"
+		gaffer.layout.index INT 16		
+
+	[attr invert]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		label STRING "Invert"	
+		gaffer.layout.index INT 17
+	[attr uvCoord]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Uv Coord"	
+		label STRING "Uv Coord"
+		gaffer.layout.index INT 18
+		
+#--------------------------------------------------------------------------------
+[node MayaGranite]
+	gaffer.nodeMenu.category STRING "Texture/Maya"
+	gaffer.graphEditorLayout.defaultVisibility BOOL false	
+
+	gaffer.layout.section.GraniteAttributes.collapsed BOOL false	
+
+	[attr color1]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "GraniteAttributes"
+		gaffer.layout.index INT 0		
+	[attr color2]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "GraniteAttributes"	
+		gaffer.layout.index INT 1		
+	[attr color3]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "GraniteAttributes"
+		gaffer.layout.index INT 2		
+	[attr fillerColor]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "GraniteAttributes"
+		label STRING "Filler Color"		
+		gaffer.layout.index INT 3		
+	[attr cellSize]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "GraniteAttributes"	
+		gaffer.layout.index INT 4		
+	[attr density]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "GraniteAttributes"
+	[attr mixRatio]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "GraniteAttributes"
+		label STRING "mix Ratio"			
+		gaffer.layout.index INT 5		
+	[attr spottyness]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "GraniteAttributes"
+		gaffer.layout.index INT 6		
+	[attr randomness]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "GraniteAttributes"
+		gaffer.layout.index INT 7		
+	[attr threshold]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "GraniteAttributes"
+		gaffer.layout.index INT 8		
+	[attr creases]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "GraniteAttributes"	
+		gaffer.layout.index INT 9
+
+	[attr defaultColor]		
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Default Color"	
+		gaffer.layout.index INT 10		
+	[attr colorGain]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Color Gain"	
+		gaffer.layout.index INT 11		
+	[attr colorOffset]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"	
+		label STRING "Color Offset"	
+		gaffer.layout.index INT 12		
+	[attr alphaGain]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha Gain"	
+		gaffer.layout.index INT 13		
+	[attr alphaOffset]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha Offset"	
+		gaffer.layout.index INT 14		
+	[attr alphaIsLuminance]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha is Luminance"
+		gaffer.layout.index INT 15
+
+	[attr invert]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		label STRING "Invert"
+		gaffer.layout.index INT 16		
+	[attr wrap]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"	
+		label STRING "Wrap"	
+		gaffer.layout.index INT 17		
+	[attr local]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		label STRING "Local"
+		gaffer.layout.index INT 18
+	[attr placementMatrix]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		gaffer.layout.index INT 19			
+#--------------------------------------------------------------------------------
+[node MayaGrid]
+	gaffer.nodeMenu.category STRING "Texture/Maya"
+	gaffer.graphEditorLayout.defaultVisibility BOOL false	
+
+	gaffer.layout.section.GridAttributes.collapsed BOOL false	
+
+	[attr lineColor]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "GridAttributes"
+		label STRING "line Color"
+		gaffer.layout.index INT 0		
+	[attr fillerColor]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "GridAttributes"
+		label STRING "Filler Color"	
+		gaffer.layout.index INT 1		
+	[attr uWidth]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "GridAttributes"
+		label STRING "U Width"		
+		gaffer.layout.index INT 2		
+	[attr vWidth]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "GridAttributes"
+		label STRING "V Width"			
+		gaffer.layout.index INT 3		
+	[attr contrast]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "GridAttributes"	
+		gaffer.layout.index INT 4
+		
+	[attr defaultColor]		
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Default Color"
+		gaffer.layout.index INT 5		
+	[attr colorGain]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Color Gain"	
+		gaffer.layout.index INT 6		
+	[attr colorOffset]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"	
+		label STRING "Color Offset"	
+		gaffer.layout.index INT 7		
+	[attr alphaGain]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha Gain"	
+		gaffer.layout.index INT 8		
+	[attr alphaOffset]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha Offset"	
+		gaffer.layout.index INT 9		
+	[attr alphaIsLuminance]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha is Luminance"
+		gaffer.layout.index INT 10		
+
+	[attr invert]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		label STRING "Invert"	
+		gaffer.layout.index INT 11		
+	[attr filter]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"	
+		gaffer.layout.index INT 12		
+	[attr filterOffset]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"	
+		gaffer.layout.index INT 13
+	[attr uvCoord]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Uv Coord"	
+		label STRING "Uv Coord"
+		gaffer.layout.index INT 14	
+			
+#--------------------------------------------------------------------------------
+[node MayaLeather]
+	gaffer.nodeMenu.category STRING "Texture/Maya"
+	gaffer.graphEditorLayout.defaultVisibility BOOL false	
+
+	gaffer.layout.section.LeatherAttributes.collapsed BOOL false	
+
+	[attr cellColor]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "LeatherAttributes"	
+		label STRING "Cell Color"
+		gaffer.layout.index INT 0		
+	[attr creaseColor]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "LeatherAttributes"
+		label STRING "Crease Color"	
+		gaffer.layout.index INT 1		
+	[attr cellSize]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "LeatherAttributes"
+		label STRING "Cell Size"
+		gaffer.layout.index INT 2		
+	[attr density]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "LeatherAttributes"
+		gaffer.layout.index INT 3		
+	[attr spottyness]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "LeatherAttributes"
+		gaffer.layout.index INT 4		
+	[attr randomness]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "LeatherAttributes"
+		gaffer.layout.index INT 5		
+	[attr threshold]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "LeatherAttributes"	
+		gaffer.layout.index INT 6		
+	[attr creases]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "LeatherAttributes"
+		gaffer.layout.index INT 7		
+
+	[attr defaultColor]		
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Default Color"
+		gaffer.layout.index INT 8		
+	[attr colorGain]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Color Gain"	
+		gaffer.layout.index INT 9		
+	[attr colorOffset]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"	
+		label STRING "Color Offset"	
+		gaffer.layout.index INT 10		
+	[attr alphaGain]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha Gain"	
+		gaffer.layout.index INT 11		
+	[attr alphaOffset]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha Offset"	
+		gaffer.layout.index INT 12		
+	[attr alphaIsLuminance]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha is Luminance"
+		gaffer.layout.index INT 13
+		
+	[attr invert]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		label STRING "Invert"
+		gaffer.layout.index INT 14		
+	[attr wrap]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"	
+		label STRING "Wrap"		
+		gaffer.layout.index INT 15		
+	[attr local]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		label STRING "Local"
+		gaffer.layout.index INT 16			
+
+	[attr placementMatrix]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		gaffer.layout.index INT 17	
+		
+#--------------------------------------------------------------------------------
+[node MayaMarble]
+	gaffer.nodeMenu.category STRING "Texture/Maya"
+	gaffer.graphEditorLayout.defaultVisibility BOOL false	
+
+	gaffer.layout.section.MarbleAttributes.collapsed BOOL false	
+
+	[attr fillerColor]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "MarbleAttributes"	
+		label STRING "Filler Color"	
+		gaffer.layout.index INT 0		
+	[attr veinColor]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "MarbleAttributes"	
+		label STRING "Vein Color"
+		gaffer.layout.index INT 1		
+	[attr veinWidth]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "MarbleAttributes"
+		label STRING "Vein Width"
+		gaffer.layout.index INT 2		
+	[attr diffusion]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "MarbleAttributes"	
+		gaffer.layout.index INT 3		
+	[attr contrast]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "MarbleAttributes"	
+		gaffer.layout.index INT 4
+		
+	[attr amplitude]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Noise Attributes"	
+		gaffer.layout.index INT 5		
+	[attr ratio]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Noise Attributes"	
+		gaffer.layout.index INT 6		
+	[attr ripples]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Noise Attributes"
+		gaffer.layout.index INT 7		
+	[attr depth]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Noise Attributes"
+		gaffer.layout.index INT 8
+
+	[attr defaultColor]		
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Default Color"	
+		gaffer.layout.index INT 9		
+	[attr colorGain]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Color Gain"
+		gaffer.layout.index INT 10		
+	[attr colorOffset]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"	
+		label STRING "Color Offset"	
+		gaffer.layout.index INT 11		
+	[attr alphaGain]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha Gain"	
+		gaffer.layout.index INT 12		
+	[attr alphaOffset]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha Offset"	
+		gaffer.layout.index INT 13		
+	[attr alphaIsLuminance]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha is Luminance"
+		gaffer.layout.index INT 14
+
+	[attr invert]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		label STRING "Invert"
+		gaffer.layout.index INT 15		
+	[attr wrap]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"	
+		gaffer.layout.index INT 16		
+	[attr local]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		gaffer.layout.index INT 17		
+	[attr filter]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"	
+		gaffer.layout.index INT 18		
+	[attr filterOffset]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"	
+		label STRING "Filter Offset"		
+		gaffer.layout.index INT 19		
+#--------------------------------------------------------------------------------
+[node MayaMountain]
+	gaffer.nodeMenu.category STRING "Texture/Maya"
+	gaffer.graphEditorLayout.defaultVisibility BOOL false	
+
+	gaffer.layout.section.MountainAttributes.collapsed BOOL false	
+
+	[attr snowColor]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "MountainAttributes"
+		label STRING "Snow Color"	
+		gaffer.layout.index INT 0		
+	[attr rockColor]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "MountainAttributes"
+		label STRING "Rock Color"
+		gaffer.layout.index INT 1		
+	[attr amplitude]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "MountainAttributes"
+		gaffer.layout.index INT 2		
+	[attr snowRoughness]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "MountainAttributes"
+		label STRING "Snow Roughness"	
+		gaffer.layout.index INT 3		
+	[attr rockRoughness]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "MountainAttributes"
+		label STRING "Rock Roughness"
+		gaffer.layout.index INT 4		
+	[attr boundary]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "MountainAttributes"
+		gaffer.layout.index INT 5		
+	[attr snowAltitude]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "MountainAttributes"
+		label STRING "Snow Altitude"
+		gaffer.layout.index INT 6		
+	[attr snowDropoff]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "MountainAttributes"
+		label STRING "Snow Dropoff"	
+		gaffer.layout.index INT 7		
+	[attr snowSlope]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "MountainAttributes"
+		label STRING "Snow Slope"
+		gaffer.layout.index INT 8		
+	[attr depthMax]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "MountainAttributes"
+		label STRING "Depth Max"		
+		gaffer.layout.index INT 9
+		
+	[attr defaultColor]		
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Default Color"	
+		gaffer.layout.index INT 10		
+	[attr colorGain]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Color Gain"	
+		gaffer.layout.index INT 11		
+	[attr colorOffset]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"	
+		label STRING "Color Offset"	
+		gaffer.layout.index INT 12		
+	[attr alphaGain]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha Gain"
+		gaffer.layout.index INT 13		
+	[attr alphaOffset]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha Offset"	
+		gaffer.layout.index INT 14		
+	[attr alphaIsLuminance]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha is Luminance"
+		gaffer.layout.index INT 15
+		
+	[attr invert]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		label STRING "Invert"	
+		gaffer.layout.index INT 16		
+	[attr wrap]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"	
+		label STRING "Wrap"	
+		gaffer.layout.index INT 17		
+	[attr local]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		label STRING "Local"
+		gaffer.layout.index INT 18
+		
+	[attr uvCoord]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Uv Coord"	
+		label STRING "Uv Coord"
+		gaffer.layout.index INT 19
+		
+#--------------------------------------------------------------------------------
+[node MayaNoise]
+	gaffer.nodeMenu.category STRING "Texture/Maya"
+	gaffer.graphEditorLayout.defaultVisibility BOOL false	
+
+	gaffer.layout.section.NoiseAttributes.collapsed BOOL false	
+
+	[attr threshold]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "NoiseAttributes"
+		gaffer.layout.index INT 0		
+	[attr amplitude]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "NoiseAttributes"
+		gaffer.layout.index INT 1		
+	[attr ratio]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "NoiseAttributes"
+		gaffer.layout.index INT 2		
+	[attr frequencyRatio]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "NoiseAttributes"
+		label STRING "Frequency Ratio"	
+		gaffer.layout.index INT 3		
+	[attr depthMax]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "NoiseAttributes"	
+		label STRING "Depth Max"
+		gaffer.layout.index INT 4		
+	[attr inflection]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "NoiseAttributes"
+		gaffer.layout.index INT 5		
+	[attr time]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "NoiseAttributes"
+		gaffer.layout.index INT 6		
+	[attr frequency]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "NoiseAttributes"
+		gaffer.layout.index INT 7		
+	[attr implode]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "NoiseAttributes"
+		gaffer.layout.index INT 8		
+	[attr implodeCenter]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "NoiseAttributes"
+		label STRING "Implode Center"
+		gaffer.layout.index INT 9		
+	[attr noiseType]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "NoiseAttributes"
+		label STRING "Noise Type"
+		gaffer.layout.index INT 10		
+	[attr density]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "NoiseAttributes"
+		gaffer.layout.index INT 11		
+	[attr spottyness]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "NoiseAttributes"
+		gaffer.layout.index INT 12		
+	[attr sizeRand]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "NoiseAttributes"
+		label STRING "Size Rand"	
+		gaffer.layout.index INT 13		
+	[attr randomness]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "NoiseAttributes"
+		gaffer.layout.index INT 14		
+	[attr falloff]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "NoiseAttributes"
+		gaffer.layout.index INT 15		
+	[attr numWaves]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "NoiseAttributes"
+		label STRING "Num Waves"
+		gaffer.layout.index INT 16
+
+	[attr defaultColor]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		gaffer.layout.index INT 17		
+	[attr colorGain]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"	
+		gaffer.layout.index INT 18		
+	[attr colorOffset]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		gaffer.layout.index INT 19		
+	[attr alphaGain]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		gaffer.layout.index INT 20		
+	[attr alphaOffset]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		gaffer.layout.index INT 21		
+	[attr alphaIsLuminance]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		gaffer.layout.index INT 22
+		
+	[attr invert]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		gaffer.layout.index INT 23		
+	[attr filter]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"	
+		gaffer.layout.index INT 24		
+	[attr filterOffset]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		gaffer.layout.index INT 25		
+
+	[attr uvCoord]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Uv Coord"	
+		label STRING "Uv Coord"
+		gaffer.layout.index INT 26
+		
+#--------------------------------------------------------------------------------
+[node MayaRock]
+	gaffer.nodeMenu.category STRING "Texture/Maya"
+	gaffer.graphEditorLayout.defaultVisibility BOOL false	
+
+	gaffer.layout.section.RockAttributes.collapsed BOOL false	
+
+	[attr color1]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "RockAttributes"	
+		gaffer.layout.index INT 0		
+	[attr color2]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "RockAttributes"
+		gaffer.layout.index INT 2		
+	[attr grainSize]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "RockAttributes"
+		label STRING "Grain Size"
+		gaffer.layout.index INT 3		
+	[attr diffusion]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "RockAttributes"	
+		gaffer.layout.index INT 4		
+	[attr mixRatio]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "RockAttributes"	
+		label STRING "Grain Size"
+		gaffer.layout.index INT 5		
+
+	[attr defaultColor]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Mix Ratio"
+		gaffer.layout.index INT 6
+
+	[attr colorGain]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"	
+		label STRING "Color Gain"
+		gaffer.layout.index INT 7		
+	[attr colorOffset]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Color Offset"	
+		gaffer.layout.index INT 8		
+	[attr alphaGain]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha Gain"	
+		gaffer.layout.index INT 9		
+	[attr alphaOffset]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha Offset"	
+		gaffer.layout.index INT 10		
+	[attr alphaIsLuminance]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha is Luminance"	
+		gaffer.layout.index INT 11		
+
+	[attr invert]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		gaffer.layout.index INT 12		
+	[attr wrap]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		gaffer.layout.index INT 13		
+	[attr local]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		gaffer.layout.index INT 14		
+	[attr filter]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		gaffer.layout.index INT 15		
+	[attr filterOffset]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"	
+		label STRING "Filter Offset"	
+		gaffer.layout.index INT 16
+	[attr placementMatrix]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		gaffer.layout.index INT 17		
+#--------------------------------------------------------------------------------
+[node MayaSnow]
+	gaffer.nodeMenu.category STRING "Texture/Maya"
+	gaffer.graphEditorLayout.defaultVisibility BOOL false	
+
+	gaffer.layout.section.SnowAttributes.collapsed BOOL false	
+
+	[attr snowColor]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "SnowAttributes"
+		label STRING "Snow Color"
+		gaffer.layout.index INT 0		
+	[attr surfaceColor]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "SnowAttributes"
+		label STRING "Surface Color"
+		gaffer.layout.index INT 1		
+	[attr threshold]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "SnowAttributes"
+		gaffer.layout.index INT 2		
+	[attr depthDecay]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "SnowAttributes"
+		label STRING "Depth Decay"	
+		gaffer.layout.index INT 3		
+	[attr thickness]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "SnowAttributes"	
+		gaffer.layout.index INT 4
+
+	[attr defaultColor]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Mix Ratio"
+		gaffer.layout.index INT 5
+	[attr colorGain]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"	
+		label STRING "Color Gain"
+		gaffer.layout.index INT 6		
+	[attr colorOffset]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Color Offset"	
+		gaffer.layout.index INT 7		
+	[attr alphaGain]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha Gain"	
+		gaffer.layout.index INT 8		
+	[attr alphaOffset]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha Offset"	
+		gaffer.layout.index INT 9		
+	[attr alphaIsLuminance]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha is Luminance"	
+		gaffer.layout.index INT 10		
+
+	[attr invert]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		gaffer.layout.index INT 11		
+	[attr wrap]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"	
+		gaffer.layout.index INT 12		
+	[attr local]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		gaffer.layout.index INT 13
+	[attr placementMatrix]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		gaffer.layout.index INT 14	
+		
+#--------------------------------------------------------------------------------
+[node MayaSolidFractal]
+	gaffer.nodeMenu.category STRING "Texture/Maya"
+	gaffer.graphEditorLayout.defaultVisibility BOOL false	
+
+	gaffer.layout.section.SolidFractal.collapsed BOOL false	
+
+	[attr threshold]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "SolidFractal"
+		gaffer.layout.index INT 0		
+	[attr amplitude]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "SolidFractal"
+		gaffer.layout.index INT 1		
+	[attr ratio]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "SolidFractal"
+		gaffer.layout.index INT 2		
+	[attr frequencyRatio]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "SolidFractal"
+		label STRING "Frequency Ratio"
+		gaffer.layout.index INT 3		
+	[attr ripples]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "SolidFractal"
+		gaffer.layout.index INT 4		
+	[attr depth]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "SolidFractal"
+		gaffer.layout.index INT 5		
+	[attr bias]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "SolidFractal"	
+		gaffer.layout.index INT 6		
+	[attr inflection]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "SolidFractal"	
+		gaffer.layout.index INT 7		
+	[attr animated]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "SolidFractal"
+		gaffer.layout.index INT 8		
+	[attr time]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "SolidFractal"
+		gaffer.layout.index INT 9		
+	[attr timeRatio]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "SolidFractal"
+		label STRING "Time Ratio"
+		gaffer.layout.index INT 10		
+
+	[attr defaultColor]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Mix Ratio"
+		gaffer.layout.index INT 11
+	[attr colorGain]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"	
+		label STRING "Color Gain"
+		gaffer.layout.index INT 12		
+	[attr colorOffset]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Color Offset"	
+		gaffer.layout.index INT 13		
+	[attr alphaGain]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha Gain"	
+		gaffer.layout.index INT 14		
+	[attr alphaOffset]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha Offset"	
+		gaffer.layout.index INT 15		
+	[attr alphaIsLuminance]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha is Luminance"	
+		gaffer.layout.index INT 16		
+
+	[attr invert]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		gaffer.layout.index INT 17		
+	[attr wrap]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		gaffer.layout.index INT 18		
+	[attr local]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		gaffer.layout.index INT 19		
+	[attr filter]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		gaffer.layout.index INT 20		
+	[attr filterOffset]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		label STRING "Filter Offset"		
+		gaffer.layout.index INT 21	
+	[attr placementMatrix]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		gaffer.layout.index INT 22	
+		
+#--------------------------------------------------------------------------------
+[node MayaStucco]
+	gaffer.nodeMenu.category STRING "Texture/Maya"
+	gaffer.graphEditorLayout.defaultVisibility BOOL false	
+
+	gaffer.layout.section.Stucoo.collapsed BOOL false	
+
+	[attr shaker]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Stucoo"
+		gaffer.layout.index INT 0		
+	[attr channel1]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Stucoo"
+		gaffer.layout.index INT 1		
+	[attr channel2]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Stucoo"
+		gaffer.layout.index INT 2		
+	[attr normalDepth]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Stucoo"
+		label STRING "Normal Depth"	
+		gaffer.layout.index INT 3		
+	[attr normalMelt]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Stucoo"
+		label STRING "Normal Melt"
+		gaffer.layout.index INT 4
+		
+	[attr defaultColor]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Mix Ratio"
+		gaffer.layout.index INT 5
+	[attr colorGain]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"	
+		label STRING "Color Gain"
+		gaffer.layout.index INT 6		
+	[attr colorOffset]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Color Offset"	
+		gaffer.layout.index INT 7		
+	[attr alphaGain]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha Gain"	
+		gaffer.layout.index INT 8		
+	[attr alphaOffset]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha Offset"	
+		gaffer.layout.index INT 9		
+	[attr alphaIsLuminance]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha is Luminance"	
+		gaffer.layout.index INT 10		
+
+	[attr invert]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		gaffer.layout.index INT 11		
+	[attr wrap]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"	
+		gaffer.layout.index INT 12		
+	[attr local]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		gaffer.layout.index INT 13		
+	[attr filter]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		gaffer.layout.index INT 14		
+	[attr filterOffset]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		label STRING "Filter Offset"		
+		gaffer.layout.index INT 15		
+	[attr placementMatrix]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		gaffer.layout.index INT 16
+			
+#--------------------------------------------------------------------------------
+[node MayaVolumeNoise]
+	gaffer.nodeMenu.category STRING "Texture/Maya"
+	gaffer.graphEditorLayout.defaultVisibility BOOL false	
+
+	gaffer.layout.section.VolumeNoise.collapsed BOOL false	
+
+	[attr threshold]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "VolumeNoise"
+		gaffer.layout.index INT 0		
+	[attr amplitude]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "VolumeNoise"
+		gaffer.layout.index INT 1		
+	[attr ratio]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "VolumeNoise"
+		gaffer.layout.index INT 2		
+	[attr frequencyRatio]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "VolumeNoise"
+		label STRING "Frequency Ratio"	
+		gaffer.layout.index INT 3		
+	[attr depthMax]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "VolumeNoise"
+		label STRING "Depth Max"	
+		gaffer.layout.index INT 4		
+	[attr inflection]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "VolumeNoise"
+		gaffer.layout.index INT 5		
+	[attr time]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "VolumeNoise"
+		gaffer.layout.index INT 6		
+	[attr frequency]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "VolumeNoise"
+		gaffer.layout.index INT 7		
+	[attr scale]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "VolumeNoise"
+		gaffer.layout.index INT 8		
+	[attr origin]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "VolumeNoise"
+		gaffer.layout.index INT 9		
+	[attr implode]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "VolumeNoise"
+		gaffer.layout.index INT 10		
+	[attr implodeCenter]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "VolumeNoise"
+		label STRING "Implode Center"
+		gaffer.layout.index INT 11		
+	[attr noiseType]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "VolumeNoise"
+		label STRING "Noise Type"	
+		gaffer.layout.index INT 12		
+	[attr density]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "VolumeNoise"
+		gaffer.layout.index INT 13		
+	[attr spottyness]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "VolumeNoise"
+		gaffer.layout.index INT 14		
+	[attr sizeRand]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "VolumeNoise"
+		label STRING "Size Rand"	
+		gaffer.layout.index INT 15		
+	[attr randomness]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "VolumeNoise"
+		gaffer.layout.index INT 16		
+	[attr falloff]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "VolumeNoise"
+		gaffer.layout.index INT 17		
+	[attr numWaves]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "VolumeNoise"
+		label STRING "Num Waves"
+		gaffer.layout.index INT 18		
+
+	[attr defaultColor]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Mix Ratio"
+		gaffer.layout.index INT 19
+	[attr colorGain]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"	
+		label STRING "Color Gain"
+		gaffer.layout.index INT 20		
+	[attr colorOffset]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Color Offset"	
+		gaffer.layout.index INT 21		
+	[attr alphaGain]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha Gain"	
+		gaffer.layout.index INT 22		
+	[attr alphaOffset]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha Offset"	
+		gaffer.layout.index INT 23		
+	[attr alphaIsLuminance]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha is Luminance"	
+		gaffer.layout.index INT 24		
+
+	[attr invert]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		gaffer.layout.index INT 25		
+	[attr wrap]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		gaffer.layout.index INT 26		
+	[attr local]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		gaffer.layout.index INT 27		
+	[attr filter]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		gaffer.layout.index INT 28		
+	[attr filterOffset]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		label STRING "Filter Offset"		
+		gaffer.layout.index INT 29		
+	[attr placementMatrix]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		gaffer.layout.index INT 30		
+		
+#--------------------------------------------------------------------------------
+[node MayaWater]
+	gaffer.nodeMenu.category STRING "Texture/Maya"
+	gaffer.graphEditorLayout.defaultVisibility BOOL false		
+
+	gaffer.layout.section.Water.collapsed BOOL false	
+
+	[attr numWaves]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Water"
+		label STRING "Num Waves"
+		gaffer.layout.index INT 0		
+	[attr waveTime]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Water"
+		label STRING "Wave Time"
+		gaffer.layout.index INT 1		
+	[attr waveVelocity]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Water"
+		label STRING "Wave Velocity"
+		gaffer.layout.index INT 2		
+	[attr waveAmplitude]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Water"
+		label STRING "Wave Amplitude"	
+		gaffer.layout.index INT 3		
+	[attr flat]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Water"
+		gaffer.layout.index INT 4		
+	[attr waveFrequency]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Water"
+		label STRING "Wave Frequency"
+		gaffer.layout.index INT 5		
+	[attr subWaveFrequency]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Water"
+		label STRING "Sub Wave Frequency"
+		gaffer.layout.index INT 6		
+	[attr smoothness]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Water"
+		gaffer.layout.index INT 7		
+	[attr windUV]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Water"
+		label STRING "Wind Uv"		
+		gaffer.layout.index INT 8
+	[attr rippleTime]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Concentric Ripple Attributes"
+		label STRING "Ripple Time"
+		gaffer.layout.index INT 9		
+	[attr rippleFrequency]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Concentric Ripple Attributes"
+		label STRING "Ripple Frequency"	
+		gaffer.layout.index INT 10		
+	[attr rippleAmplitude]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Concentric Ripple Attributes"
+		label STRING "Ripple Amplitude"	
+		gaffer.layout.index INT 11		
+	[attr dropSize]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Concentric Ripple Attributes"	
+		label STRING "Drop Size"	
+		gaffer.layout.index INT 12		
+	[attr rippleOrigin]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Concentric Ripple Attributes"
+		label STRING "Ripple Origin"
+		gaffer.layout.index INT 13		
+	[attr groupVelocity]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Concentric Ripple Attributes"
+		label STRING "Group Velocity"	
+		gaffer.layout.index INT 14		
+	[attr phaseVelocity]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Concentric Ripple Attributes"	
+		label STRING "Phase Velocity"	
+		gaffer.layout.index INT 15		
+	[attr spreadStart]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Concentric Ripple Attributes"
+		label STRING "Spread Start"	
+		gaffer.layout.index INT 16		
+	[attr spreadRate]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Concentric Ripple Attributes"
+		label STRING "Spread Rate"
+		gaffer.layout.index INT 17		
+	[attr reflectionBox]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Concentric Ripple Attributes"
+		label STRING "Reflection Box"
+		gaffer.layout.index INT 18		
+	[attr boxMin]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Concentric Ripple Attributes"
+		label STRING "Box Min"	
+		gaffer.layout.index INT 19		
+	[attr boxMax]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Concentric Ripple Attributes"
+		label STRING "Box Max"	
+		gaffer.layout.index INT 20		
+
+	[attr defaultColor]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Mix Ratio"
+		gaffer.layout.index INT 21
+	[attr colorGain]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"	
+		label STRING "Color Gain"
+		gaffer.layout.index INT 22		
+	[attr colorOffset]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Color Offset"	
+		gaffer.layout.index INT 23		
+	[attr alphaGain]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha Gain"	
+		gaffer.layout.index INT 24		
+	[attr alphaOffset]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha Offset"	
+		gaffer.layout.index INT 25		
+	[attr alphaIsLuminance]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Color Balance"
+		label STRING "Alpha is Luminance"	
+		gaffer.layout.index INT 26		
+
+	[attr invert]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		gaffer.layout.index INT 27		
+	[attr wrap]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		gaffer.layout.index INT 28		
+	[attr local]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		gaffer.layout.index INT 29		
+	[attr filter]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		gaffer.layout.index INT 30		
+	[attr filterOffset]
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Effects"
+		label STRING "Filter Offset"		
+		gaffer.layout.index INT 31		
+
+	[attr uvCoord]	
+		gaffer.graphEditorLayout.visible BOOL true
+		page STRING "Uv Coord"	
+		label STRING "Uv Coord"
+		gaffer.layout.index INT 32		
+
+#--------------------------------------------------------------------------------	
+#------------- Deprecated Shaders -----------------------------------------------
+#--------------------------------------------------------------------------------
+
+[node MtoaCameraUvMapper]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MayaBlendColors]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MayaBump2D]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MayaChecker]
+ 	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MayaClamp]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MayaCondition]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""	 
+
+[node MayaContrast]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MayaDoubleShadingSwitch]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MayaFile]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MayaFlatClosure]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MayaGammaCorrect]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MayaHsvToRgb]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MayaImagePlane]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MayaLayeredTexture]
+ 	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MayaLuminance]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MayaMultiplyDivide]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MayaNormalDisplacement]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MayaPlace2DTexture]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""	
+
+[node MayaPlace3DTexture]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MayaPlusMinusAverage1D]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""	
+
+[node MayaPlusMinusAverage2D]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MayaPlusMinusAverage3D]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MayaProjection]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MayaQuadShadingSwitch]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""	
+
+[node MayaRamp]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MayaRemapColor]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MayaRemapHsv]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MayaRemapValueToColor]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MayaRemapValueToValue]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MayaReverse]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MayaRgbToHsv]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MayaSamplerInfo1D]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MayaSamplerInfo2D]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MayaSamplerInfo3D]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MayaSetRange]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MayaShadingEngine]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MayaSingleShadingSwitch]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MayaSurfaceLuminance]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MayaSurfaceShader]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MayaTripleShadingSwitch]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MayaVectorDisplacement]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MtoaAnimColor]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MtoaAnimFloat]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MtoaAnimMatrix]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MtoaAnimPoint]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MtoaAnimVector]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MtoaAovWriteColor]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MtoaAovWriteFloat]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MtoaAovWriteVector]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MtoaAovWriteVector2]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MtoaColorToFloat]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MtoaMeshLightMaterial]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MtoaPoint2ToFloat]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MtoaPointToFloat]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MtoaUserDataBool]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MtoaUserDataColor]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MtoaUserDataVec2]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MtoaUserDataVector]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
+
+[node MtoaVectorToFloat]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""	
+
+[node MayaHair]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""	
+	
+[node MtoaWriteColor]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""	
+
+[node MtoaWriteFloat]
+	#DEPRECATED
+	gaffer.nodeMenu.category STRING ""		
