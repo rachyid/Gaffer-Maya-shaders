@@ -1,2 +1,21 @@
 # Gaffer-Maya-shaders
 some Maya nodes
+[node MayaBulge]
+[node MayaBrownian]
+[node MayaCloth]
+[node MayaCloud]
+[node MayaCrater]
+[node MayaFractal]
+[node MayaGranite]
+[node MayaGrid]
+[node MayaLeather]
+[node MayaMarble]
+[node MayaMountain]
+[node MayaNoise]
+[node MayaRock]
+[node MayaSnow]
+[node MayaSolidFractal]
+[node MayaStucco]
+[node MayaVolumeNoise]
+[node MayaWater]
+find under Arnold/Shader/texture/Maya
